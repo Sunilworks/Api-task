@@ -5,9 +5,9 @@ const cors = require('cors');
 const app = express();
 const PORT = 4500;
 
-// app.use(cors({
-//     origin: '*'
-// }));
+app.use(cors({
+    origin: '*'
+}));
 app.use('/api',routing);
 
 app.get('/',(req,res)=>{
