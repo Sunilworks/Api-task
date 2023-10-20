@@ -1,4 +1,4 @@
-const {bollywood,hollywood,technology,fitness,food} = require('../dataDummy');
+const {bollywood,hollywood,technology,fitness,food, blog} = require('../dataDummy');
 
 const bollycontroller = (req,res) =>{
     return res.send(bollywood)
@@ -20,4 +20,8 @@ const foodcontroller = (req,res) =>{
     return res.send(food)
 };
 
-module.exports = {bollycontroller,hollycontroller,techcontroller,fitnesscontroller,foodcontroller}
+const blogcontroller = (req,res) =>{
+    return res.send(blog)
+};
+
+module.exports = {bollycontroller,hollycontroller,techcontroller,fitnesscontroller,foodcontroller,blogcontroller}
